@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>http://www.devcoop.fr</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/societe</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/expertise</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/moyen</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/sante</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/dmp</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/mobilite</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/metier</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/reference</loc>
+    </url>
+    <url>
+        <loc>http://www.devcoop.fr/contact</loc>
+    </url>
+
+</urlset>

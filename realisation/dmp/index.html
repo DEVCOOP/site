@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <title>Connecteur DMP (homologué V2 CNDA)  | DEVCOOP</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Fort de notre expérience dans le domaine de la santé, DEVCOOP propose son propre connecteur DMP (homologué ASIP) dont l&#39;API est en Open-source. Quelques exemples d&#39;utilisation sont à votre disposition pour voir comment interargir avec le DMP (Dossier Médical Personnel).">
+  <meta content="Connecteur DMP (homologué V2 CNDA)  | DEVCOOP" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="http://www.devcoop.fr/img/logo.png" property="og:image">
+  <meta content="http://www.devcoop.fr" property="og:url">
+  <meta content="DEVCOOP" property="og:site_name">
+  <meta content="fr_FR" property="og:locale">
+  <meta name="author" content="DEVCOOP">
+  <meta name="generator" content="Hugo 0.60.1" />
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://www.devcoop.fr/sass/materialize.scss">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open&#43;Sans:600,700 ">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material&#43;Icons ">
+  
+  <link rel="stylesheet" href="https://www.devcoop.fr/css/site.css ">
+  
+  <link rel="stylesheet" href="https://www.devcoop.fr/css/navbar.css ">
+  
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://www.devcoop.fr/images/favicon.ico " type="image/x-icon">
+  <link rel="icon" href="https://www.devcoop.fr/images/favicon.ico " type="image/x-icon">
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+</div>
+<!-- preloader end -->
+<header>
+  <div class="navbar-fixed">
+
+    <nav class="">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a class="brand-logo" href='https://www.devcoop.fr/'><img class="responsive-img valign" style="height: 34px;vertical-align: middle;margin-top: -7px;" src="/img/logo.png" alt="logo DEVCOOP"/></a>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <div class="navbar-collapse collapse">
+            
+            <ul id="nav-web" class="right hide-on-med-and-down">
+              <li id="homeNav" class=''><a href='https://www.devcoop.fr/'>Accueil</a></li>
+              <li id="quisommesnousNav" class='dropdown '>
+                <a href="" class="dropdown-button" data-constrainwidth="false" data-beloworigin="true" data-activates="dropdownQuisommesnous">Qui sommes nous <i class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdownQuisommesnous" class="dropdown-content">
+                  <li id="societeNav" class=''><a href='https://www.devcoop.fr/devcoop/societe'>La société</a></li>
+                  <li id="expertiseNav" class=''><a href='https://www.devcoop.fr/devcoop/expertise'>Domaines d'expertises</a></li>
+                  <li id="moyenNav" class=''><a href='https://www.devcoop.fr/devcoop/moyen'>Moyens</a></li>
+                </ul>
+              </li>
+              <li id="realisationNav" class='dropdown active'>
+                <a href="" class="dropdown-button" data-constrainwidth="false" data-beloworigin="true" data-activates="dropdownRealisation">Nos réalisations <i class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdownRealisation" class="dropdown-content">
+                  <li id="santeNav" class=''><a href='https://www.devcoop.fr/realisation/sante'>Domaine de la Santé</a></li>
+                  <li id="dmpNav" class='active'><a href='https://www.devcoop.fr/realisation/dmp'>Connecteur DMP</a></li>
+                  <li class="divider"></li>
+                  <li id="iotNav" class=''><a href='https://www.devcoop.fr/realisation/iot'>Internet des Objets (IoT)</a></li>
+                  <li id="mobiliteNav" class=''><a href='https://www.devcoop.fr/realisation/mobilite'>Mobilité</a></li>
+                  <li class="divider"></li>
+                  <li id="metierNav" class=''><a href='https://www.devcoop.fr/realisation/metier'>Autres domaines d'interventions</a></li>
+                  <li id="referenceNav" class=''><a href='https://www.devcoop.fr/realisation/reference'>Nos références</a></li>
+                </ul>
+              </li>
+              <li id="contactNav" class='' ><a href='https://www.devcoop.fr/contact'>Contact</a></li>
+            </ul>
+            
+            <ul id="nav-mobile" class="side-nav collapsible"  data-collapsible="accordion">
+              <li class="right-align"><a onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons clear">close</i></a></li>
+              <li class=''><a href='https://www.devcoop.fr/'>Accueil</a></li>
+              <li class=''>>
+                <div class="collapsible-header"><a href="">Qui sommes nous<i class="material-icons right">arrow_drop_down</i></a></div>
+                <div class="collapsible-body">
+                  <ul>
+                    <li class=''><a href='https://www.devcoop.fr/devcoop/societe'>La société</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/devcoop/expertise'>Domaines d'expertises</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/devcoop/moyen'>Moyens</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class='dropdown active'>>
+                <div class="collapsible-header"><a href="" class="" data-activates="dropdownRealisation">Nos réalisations <i class="material-icons right">arrow_drop_down</i></a></div>
+                <div class="collapsible-body">
+                  <ul>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/sante'>Domaine de la Santé</a></li>
+                    <li class='active'><a href='https://www.devcoop.fr/realisation/dmp'>Connecteur DMP</a></li>
+                    <li class="divider"></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/iot'>Internet des Objets (IoT)</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/mobilite'>Mobilité</a></li>
+                    <li class="divider"></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/metier'>Autres domaines d'interventions</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/reference'>Nos références</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class='' ><a href='https://www.devcoop.fr/contact'>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero parallax-effect ">
+    <div class="container">
+        <div class="hero-content animated slow">
+            <h1>Connecteur DMP</h1>
+        </div>
+    </div>
+</div>
+
+<script src='https://www.devcoop.fr/plugins/prettify.js'></script>
+    <div class="container" itemscope itemtype="http://schema.org/SoftwareApplication" id="dynamic-content">
+        <h2 itemprop="name">DMPC-API</h2>
+        <p itemprop="about">
+            La DMPC-API est une interface de programmation écrite en Java, fournissant une abstraction de
+            haut niveau permettant l'exécution de l'ensemble des transactions définies
+            dans le <a itemprop="accessibilityAPI"
+                       href='http://esante.gouv.fr/actus/dmp/asip-sante-publication-du-cahier-des-charges-de-la-dmp-compatibilite-actualise'
+                       target="_blank">cahier des charges pour la DMP Compatibilité.</a>
+            Elle facilite ainsi aux intégrateurs/éditeurs la mise en place des contraintes
+            fortes imposées par l'ASIP Santé pour la <span itemprop="applicationSubCategory">DMP</span> Compatibilité.
+        </p>
+
+        <p>Ces contraintes sont de deux natures. La première, technique, est la mise en oeuvre de la sécurité dans le
+            DMP.
+            C'est à dire la gestion des authentifications et des autorisations, ainsi que le cryptage des
+            communications.
+
+            La deuxième, fonctionnel, concerne le respect des différents standards internationaux imposés dans le cahier
+            des charges : IHE, OASIS, HL7, W3C, ASIP Santé (Cadre d'intéropérabilité) …
+        <h2>Mise en oeuvre</h2>
+        <p>L'objectif de Devcoop est d’implémenter, de commercialiser et de promouvoir cette DMPC-API.
+            La force de cette API est dans la simplicité de sa mise en oeuvre, mais aussi dans ses briques applicatives
+            utilisées.
+            En effet, la DMPC-API est une api Java dont tous les composants sont injectables dans un environnement
+            <a href='http://www.springsource.org/spring-framework' target="_blank">SpringFramework</a>.
+            Ces composants sont tous basés sur des librairies de l'opensource comme
+            <a href='http://joda-time.sourceforge.net/' target="_blank">Joda-time</a>,
+            <a href='http://logging.apache.org/log4j' target="_blank">Log4j</a>,
+            <a href='http://santuario.apache.org/' target="_blank">Apache Santuario</a>,
+            <a href='http://cxf.apache.org/' target="_blank">Apache CXF</a>… .
+        </p>
+
+
+        La DMPC-API certifiée <img src='https://www.devcoop.fr/img/dmp-compatible.jpg' width="45" alt="DMP Compatible"/> V1 en 2013 puis <img
+            src='https://www.devcoop.fr/img/dmp-compatible.png' width="45" alt="DMP Compatible"/> V2 en 2019, est découpée en plusieurs profils
+        :
+        <ul class="default">
+            <li>Accés sécurisé au dossier en authentification indirecte (par certificat serveur)</li>
+            <li>Accés sécurisé au dossier en authentification directe (par carte CPS)</li>
+            <li>Création et Gestion Administrative du Dossier</li>
+            <li>Alimentation</li>
+            <li>Consultation</li>
+        </ul>
+        <br/>
+        <strong>DEVCOOP vous accompagne lors de l'intégration de cette API dans votre application mais également lors de
+            la phase d'homologation auprès du CNDA.</strong>
+
+        <br/><br/>
+        <h2>Intégration de la DMPC-API</h2>
+        DEVCOOP vous propose 2 modes d'intégration du connecteur :
+        <br/><br/>
+        <h3>Mode intégré : API Java</h3>
+        Votre application est écrite en Java, vous pouvez directement intégrer l'api (la librairie est disponible via un
+        repository maven).
+        <p>Exemple de scenario :</p>
+        <p>
+            <em>
+                Un Personnel de Santé, Pierre Dupont,
+                accéde au DMP du patient dont l'INSC (Identifiant National de Santé Calculé) est
+                «0404312364978044945679»,
+                et lui ajoute un document concernant une «Hépatite virale chronique»
+            </em>
+        </p>
+
+        <div>
+            <a class="image" id="code-button">
+                Voir le code source.
+            </a>
+            <div id="code" style="display: none">
+
+            <pre class="prettyprint">
+			<code class="language-java">
+// Initialisation du point d'entrée exécutant l'ensemble des transactions vers le DMP
+DMPCProxy proxy = (DMPCProxy)springContext.getBean("dmpcProxy"); 
+
+// Initialisation d'un PS auteur des différentes transactions
+DMPCAuthor ps1 = new DMPCAuthor("1234", "Dupont", "Pierre");
+ps1.setRole("Médecin");    
+ps1.setStructureNom("Clinique du beau Soleil");
+
+// Test d'existence (recherche) d'un patient
+DMPCPatient patient = proxy.td02Exist(new TD02Request("0404312364978044945679")).getPatient();
+       
+// Initialisation d'un document à soumettre au DMP
+DMPCDocument document =  new DMPCDocument();
+document.setTitle("Titre du document concernant l'hépatite virale");
+document.setContent("Contenu textuel");
+document.addEvent(new DMPCCode("B18", "2.16.840.1.113883.6.3", "Hépatite virale chronique"));
+document.setFormat(proxy.getCodesFor(DMPCCode.ASIPJeuxValeurs.FORMAT_CODE).get(1).getCode());
+// …
+
+// Création de l'enveloppe de soumission 
+DMPCSubmission submission = new DMPCSubmission();
+submission.addDocument(document);
+submission.setPatient(patient);
+// Envoi vers le DMP de la soumission.
+TD21Response td21Response = proxy.td21SubmitDocuments(context, new TD21Request(submission));
+System.out.println("Soumission enregistré avec l'uuid :" + td21Response.getSubmission().getUuid());	
+			</code>
+            </pre>
+            </div>
+        </div>
+        <br/><br/>
+        <h3>Mode service : Webservice REST ou SOAP</h3>
+        Votre application est écrite dans un autre language, vous pouvez installer le connecteur en standalone sur un
+        serveur et utiliser les webservices pour communiquer avec le DMP.
+
+        <br/><br/>
+        <h2>Homologation v2</h2>
+        Depuis 2019, une nouvelle version du DMP (v2) est disponible.
+        Le connecteur de DEVCOOP est <b>homologué DMP compatible API V2</b> par le CNDA.
+
+        <br/><br/>
+
+
+        <p>Pour plus de renseignements sur sa mise en œuvre, vous pouvez consulter la documentation du projet accessible
+            en ligne :
+            <a href="http://devcoop.github.io/dmpc/" target='_blank'> http://devcoop.github.io/dmpc/</a>
+        </p>
+
+        <strong>Pour toute information, concernant la DMPC-API contactez nous : <a href="mailto:dmp@devcoop.fr">dmp@devcoop.fr</a></strong>
+
+        <br/><br/>
+    </div>
+    <script type="text/javascript">
+        
+        var button = document.querySelector('#code-button');
+        var code = document.querySelector('#code');
+        button.addEventListener('click', function (event) {
+                if (code.style.display == "") {
+                    code.style.display = "none";
+                    button.innerHTML = "Voir le code source";
+                } else {
+                    code.style.display = "";
+                    button.innerHTML = "Cacher le code source";
+                }
+            }
+        );
+    </script>
+
+</main>
+
+<footer>
+  <div  class="container">
+    <div class="row">
+      <div class="col m9">
+        <img src='https://www.devcoop.fr/img/logoS.png' style="float:left;margin-right: 10px;margin-top: 5px" alt="logo DEVCOOP petit">
+        <div class="valign-wrapper">228 Avenue de Cadaujac <br/>33850 Léognan</div>
+      </div>
+
+      <div class="col m3">
+        <a href='https://www.devcoop.fr/mentions.html'>© DEVCOOP 2019</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://www.devcoop.fr/plugins/jquery-2.2.3.min.js"></script>
+
+<script src="https://www.devcoop.fr/plugins/mako.js"></script>
+
+<script src="https://www.devcoop.fr/plugins/materialize.js"></script>
+
+
+<!--[if lt IE 9]>
+
+<script src="https://www.devcoop.fr/plugins/html5shiv.js"></script>
+
+<![endif]-->
+
+<script>
+  $('.collapsible').collapsible({
+    accordion: false 
+  });
+  $('.button-collapse').sideNav();
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name" : "DEVCOOP",
+    "url": "http://www.devcoop.fr",
+    "logo": "http://www.devcoop.fr/img/logo.png",
+    "sameAs" : [
+      "https://twitter.com/devcoop"
+    ],
+    "contactPoint" : [{
+      "@type" : "ContactPoint",
+      "email" : "contact@devcoop.com",
+      "contactType" : "customer service"
+    }],
+    "address" : [{
+      "@type" : "PostalAddress",
+      "streetAddress" : "228 av Cadaujac",
+      "postalCode" : "33850",
+      "addressLocality" : "Leognan",
+      "addressCountry" : "FRANCE"
+    }]
+  }
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-39129192-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<script language="javascript">
+  $('.slider').slider({height: '100%'});
+
+
+  $('.parallax').parallax();
+  
+  var $img = $('#parallaxDMP').children("img").first();
+  $img.load(function () {
+    $img.offset({left: -$img.width()});
+  });
+  function updateDmp() {
+    if (!$('#parallaxDMP').length) {
+      $(window).unbind("scroll", updateDmp);
+      return;
+    }
+    var container_height;
+    var window_width = $(window).width();
+    if (window_width < 601) {
+      container_height = ($('#parallaxDMP').height() > 0) ? $('#parallaxDMP').height() : $('#parallaxDMP').children("img").height();
+    } else {
+      container_height = ($('#parallaxDMP').height() > 0) ? $('#parallaxDMP').height() : 500;
+    }
+
+    var img_width = $img.width();
+    var top = $('#parallaxDMP').offset().top;
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = window.innerHeight;
+    var windowBottom = scrollTop + windowHeight;
+    var percentScrolled = (windowBottom - top) / windowHeight;
+    var parallax = Math.round((img_width * percentScrolled));
+    if (parallax <= ($('#parallaxDMP').width() / 2 + 80)) {
+      $img.css('transform', "translateX(" + parallax + "px)");
+    }
+
+  }
+
+
+  $(window).scroll(updateDmp);
+
+</script>
+</body>
+</html>

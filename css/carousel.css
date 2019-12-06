@@ -1,0 +1,276 @@
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: relative;
+    z-index: 15;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+#myCarousel.carousel {
+    margin-bottom: 20px;
+
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    margin-top: -95px;
+}
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+    font-size: 20px;
+    padding: 12px;
+    background-image: url(../img/gris80.png);
+    background-size: 100% 100%;
+    line-height: 29px;
+    text-align: left;
+    width: auto;
+    bottom: 50px;
+    right: auto;
+    text-shadow: none;
+    margin-right: auto;
+}
+.carousel-caption>h1 {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+.carousel-indicators {
+    bottom: 0px;
+}
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    /*background-color: #544F4C;*/
+    border-color:#544F4C;
+    margin: 0px;
+}
+.carousel-indicators li.active{
+    background-color: #EF7E00;
+    border-color:#EF7E00;
+    width: 15px;
+    height: 15px;
+}
+@media (max-width: 768px) {
+    #myCarousel.carousel {
+        margin-top: -70px;
+    }
+    .carousel-caption {
+        font-size: 10px;
+        bottom: 30px;
+        line-height: 15px;
+        padding: 2px;
+    }
+    .carousel-caption>h1 {
+        font-size: 10px;
+    }
+    .carousel-indicators {
+        margin-bottom: 2px;
+    }
+    .carousel-indicators li {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .carousel-caption {
+        bottom: 30px;
+    }
+}
+
+
+#carouselActualite > .carousel-indicators {
+    top: -26px;
+    left: 140px;
+    width: 70px;
+    height: 20px;
+    margin-left: 0px;
+}
+#carouselActualite > .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    /*background-color: #544F4C;*/
+    border-color:#544F4C;
+    margin: 0px;
+}
+
+#carouselActualite > .carousel-indicators .active{
+    width: 12px;
+    height: 12px;
+    background-color: #EF7E00;
+    border-color:#EF7E00;
+    margin: 0px;
+}
+
+#carouselContact > .carousel-indicators {
+    top: -40px;
+    left: 200px;
+    width: 50px;
+    height: 20px;
+    margin-left: 0px;
+}
+#carouselContact > .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    /*background-color: #544F4C;*/
+    border-color:#544F4C;
+    margin: 0px;
+}
+
+#carouselContact > .carousel-indicators .active{
+    width: 12px;
+    height: 12px;
+    background-color: #EF7E00;
+    border-color:#EF7E00;
+    margin: 0px;
+}
+
+
+/* Declare heights because of positioning of img element */
+#myCarousel.carousel .item {
+    height: 400px;
+    max-height: calc(80vmin - 140px);
+    background-color: #777;
+    min-height: 150px;
+}
+#myCarousel .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    max-height: 400px;
+    height: 100%;
+}
+
+/* Bug on Firefox*/
+#myCarousel .carousel-inner{
+    overflow:visible;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (min-width: 768px) {
+
+    Remove the edge padding needed for mobile 
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    Bump up size of carousel content 
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+
+
+}
+
+.carousel-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/Bosphorus_Bridge.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-image.dmp{
+    background-image: url('../img/chameleons-wallpaper.jpg');
+}
+.carousel-image.iot{
+    background-image: url('../img/iot.png');
+}
+.carousel-image.mobile{
+    background-image: url('../img/tablet-wallpaper.jpg');
+}
+.carousel-image.map{
+    background-image: url('../img/gmap.jpg');
+}

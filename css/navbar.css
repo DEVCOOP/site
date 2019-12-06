@@ -1,0 +1,104 @@
+
+nav ul a, nav .brand-logo {
+    color: #444;
+}
+nav {
+    background-image: url(../img/blanc90.png);
+    background-color: transparent;
+    /* height: 74px; */
+}
+
+
+navbar-toggle:hover{
+    background-color: white;
+    border-color: white;
+}
+nav a:hover .caret {
+    border-top-color: #EF7E00;
+    border-bottom-color: #EF7E00;
+}
+
+nav a>i {
+    border-top-color: #544F4C;
+    border-bottom-color: #544F4C;
+}
+nav a.button-collapse>i{
+    color: #444;
+}
+
+
+
+nav li.active > a,
+nav li.active > a:hover,
+nav li.active > a:focus,
+nav li > a:hover,
+nav li > a:focus{
+    background: transparent;
+    border-bottom: 2px solid #EF7E00;
+    color: #544F4C;
+    background-color: transparent;
+}
+
+nav #nav-web > li > a, nav #nav-web > li > a > i.material-icons {
+    color: #544F4C;
+    font-size: 13px;
+    line-height: 63px;
+    height: 64px;
+}
+
+
+nav li {
+    top: 50%;
+    bottom: 50%;
+
+}
+
+nav ul li.active {
+    background: transparent;
+}
+
+nav .open > a,
+nav .open > a:hover,
+nav .open > a:focus {
+    color: #544F4C;
+    background-color: transparent;
+}
+
+nav .dropdown-content > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #EF7E00;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: none;
+}
+nav .dropdown-content > li.active > a, nav .side-nav li.active > a {
+    color: white;
+    text-decoration: none;
+    background-color: #EF7E00;
+    border-bottom: none;
+}
+
+nav .dropdown-content > li > a {
+    color: #544F4C;
+    font-size: 13px;
+}
+
+nav > li > .dropdown-content {
+    background-image: url(../img/blanc90.png);
+    background-color: transparent;
+}
+nav .side-nav li a {
+    padding: 0 5px 0 20px;
+}
+nav .side-nav .collapsible-header {
+    padding: 0px;
+}
+nav .side-nav .collapsible-body li a{
+    font-size: 12px;
+    padding-right: 5px;
+    padding: 0 5px 0 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+

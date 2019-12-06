@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <title>DEVCOOP2</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Implanté à Bordeaux, DEVCOOP a été créé en 2009 par des passionnés de technologie, expérimentés et spécialisés dans le développement et l&#39;utilisation de logiciel open-source autour des technologies Java TM et Java Entreprise (J2EE). DEVCOOP possède une forte connaissance du domaine de la santé avec notamment son connecteur DMP (homologué ASIP) à destination des éditeurs de santé">
+  <meta content="DEVCOOP2" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="http://www.devcoop.fr/img/logo.png" property="og:image">
+  <meta content="http://www.devcoop.fr" property="og:url">
+  <meta content="DEVCOOP" property="og:site_name">
+  <meta content="fr_FR" property="og:locale">
+  <meta name="author" content="DEVCOOP">
+  <meta name="generator" content="Hugo 0.60.1" />
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://www.devcoop.fr/sass/materialize.scss">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open&#43;Sans:600,700 ">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material&#43;Icons ">
+  
+  <link rel="stylesheet" href="https://www.devcoop.fr/css/site.css ">
+  
+  <link rel="stylesheet" href="https://www.devcoop.fr/css/navbar.css ">
+  
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://www.devcoop.fr/images/favicon.ico " type="image/x-icon">
+  <link rel="icon" href="https://www.devcoop.fr/images/favicon.ico " type="image/x-icon">
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+</div>
+<!-- preloader end -->
+<header>
+  <div class="navbar-fixed">
+
+    <nav class="">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a class="brand-logo" href='https://www.devcoop.fr/'><img class="responsive-img valign" style="height: 34px;vertical-align: middle;margin-top: -7px;" src="/img/logo.png" alt="logo DEVCOOP"/></a>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <div class="navbar-collapse collapse">
+            
+            <ul id="nav-web" class="right hide-on-med-and-down">
+              <li id="homeNav" class='active'><a href='https://www.devcoop.fr/'>Accueil</a></li>
+              <li id="quisommesnousNav" class='dropdown '>
+                <a href="" class="dropdown-button" data-constrainwidth="false" data-beloworigin="true" data-activates="dropdownQuisommesnous">Qui sommes nous <i class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdownQuisommesnous" class="dropdown-content">
+                  <li id="societeNav" class=''><a href='https://www.devcoop.fr/devcoop/societe'>La société</a></li>
+                  <li id="expertiseNav" class=''><a href='https://www.devcoop.fr/devcoop/expertise'>Domaines d'expertises</a></li>
+                  <li id="moyenNav" class=''><a href='https://www.devcoop.fr/devcoop/moyen'>Moyens</a></li>
+                </ul>
+              </li>
+              <li id="realisationNav" class='dropdown '>
+                <a href="" class="dropdown-button" data-constrainwidth="false" data-beloworigin="true" data-activates="dropdownRealisation">Nos réalisations <i class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdownRealisation" class="dropdown-content">
+                  <li id="santeNav" class=''><a href='https://www.devcoop.fr/realisation/sante'>Domaine de la Santé</a></li>
+                  <li id="dmpNav" class=''><a href='https://www.devcoop.fr/realisation/dmp'>Connecteur DMP</a></li>
+                  <li class="divider"></li>
+                  <li id="iotNav" class=''><a href='https://www.devcoop.fr/realisation/iot'>Internet des Objets (IoT)</a></li>
+                  <li id="mobiliteNav" class=''><a href='https://www.devcoop.fr/realisation/mobilite'>Mobilité</a></li>
+                  <li class="divider"></li>
+                  <li id="metierNav" class=''><a href='https://www.devcoop.fr/realisation/metier'>Autres domaines d'interventions</a></li>
+                  <li id="referenceNav" class=''><a href='https://www.devcoop.fr/realisation/reference'>Nos références</a></li>
+                </ul>
+              </li>
+              <li id="contactNav" class='' ><a href='https://www.devcoop.fr/contact'>Contact</a></li>
+            </ul>
+            
+            <ul id="nav-mobile" class="side-nav collapsible"  data-collapsible="accordion">
+              <li class="right-align"><a onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons clear">close</i></a></li>
+              <li class='active'><a href='https://www.devcoop.fr/'>Accueil</a></li>
+              <li class=''>>
+                <div class="collapsible-header"><a href="">Qui sommes nous<i class="material-icons right">arrow_drop_down</i></a></div>
+                <div class="collapsible-body">
+                  <ul>
+                    <li class=''><a href='https://www.devcoop.fr/devcoop/societe'>La société</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/devcoop/expertise'>Domaines d'expertises</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/devcoop/moyen'>Moyens</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class='dropdown '>>
+                <div class="collapsible-header"><a href="" class="" data-activates="dropdownRealisation">Nos réalisations <i class="material-icons right">arrow_drop_down</i></a></div>
+                <div class="collapsible-body">
+                  <ul>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/sante'>Domaine de la Santé</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/dmp'>Connecteur DMP</a></li>
+                    <li class="divider"></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/iot'>Internet des Objets (IoT)</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/mobilite'>Mobilité</a></li>
+                    <li class="divider"></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/metier'>Autres domaines d'interventions</a></li>
+                    <li class=''><a href='https://www.devcoop.fr/realisation/reference'>Nos références</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class='' ><a href='https://www.devcoop.fr/contact'>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero parallax-effect ">
+    <div class="container">
+        <div class="hero-content animated slow">
+            <h1>Nous accompagnons nos clients dans le développement <br/>de solutions adaptées au métier et à la performance.</h1>
+        </div>
+    </div>
+</div>
+
+<div id="home" class="container">
+        <section>
+            <div class="row col-wrap">
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><img src='https://www.devcoop.fr/img/pictoDefinition.png' alt="Définition"></h2>
+                        <h3 class="center">Définition</h3>
+
+                        <p class="light">Vous savez ce que vous voulez faire mais vous ne savez pas comment l'exprimer?
+                            <br/>DEVCOOP vous accompagne dans l'étude et la formalisation de vos besoins jusqu'au cahier
+                            des charges.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><img src='https://www.devcoop.fr/img/pictoConception.png' alt="Définition"></h2>
+                        <h3 class="center">Conception</h3>
+
+                        <p class="light">Fort de son expérience, DEVCOOP vous conseille dans la définition des résultats
+                            attendus, en termes de fonctionnalités, de performance, de robustesse, de maintenance, de
+                            sécurité, d'extensibilité, etc.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><img src='https://www.devcoop.fr/img/pictoDeveloppement.png' alt="Définition"></h2>
+                        <h3 class="center">Développement</h3>
+
+                        <p class="light">Assurer les développements en respectant les spécifications, mener une
+                            intégration continue, suivre le plan qualité, DEVCOOP mobilise les moyens nécessaires à la
+                            réalisation de vos projets.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><img src='https://www.devcoop.fr/img/pictoDeploiement.png' alt="Définition"></h2>
+                        <h3 class="center">Déploiement</h3>
+
+                        <p class="light">Où deployer son application, sur un serveur intra-entreprise, chez un hébergeur
+                            ou dans le cloud ? Comment conduire le changement auprès des utilisateurs finaux ? Pilote,
+                            validation, formation, DEVCOOP vous assiste et veille à la fluidité du déploiement.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="row col-wrap">
+                <div class="col m6 s12">
+                    <h2 class="media-heading">Actualités</h2>
+                    <div class="actualites slider">
+                        <ul class="slides">
+                            <li>
+                                <img src='https://www.devcoop.fr/img/dmpBleu.jpg' alt="DISPOSITIFS MÉDICAUX CONNECTÉS & SANTÉ DU FUTUR "/>
+                                <div class="caption">
+                                    <div class="title">Connecteur DMP</div>
+                                    <small>Décembre 2019</small><br/><br/>
+                                    Le connecteur DMPC-API de Devcoop a été homologué <b>DMP compatible API V2</b> par
+                                    le CNDA<br/>
+                                </div>
+                            </li>
+                            <li>
+                                <img src='https://www.devcoop.fr/img/salon_DM2.jpg' alt="DISPOSITIFS MÉDICAUX CONNECTÉS & SANTÉ DU FUTUR "/>
+                                <div class="caption">
+                                    <div class="title">DISPOSITIFS MÉDICAUX CONNECTÉS & SANTÉ DU FUTUR</div>
+                                    <small>Mai 2016</small><br/>
+                                    Evènement organisé par Aquitaine Développement Innovation (ADI) sur le thème des
+                                    dispositifs médicaux connectés.<br/>
+                                    DEVCOOP a présenté 2 missions de consulting effectués pour des entreprises
+                                    régionales afin de les accompagner vers ces nouveaux dispositifs. <a
+                                        href="http://www.aquitaine-developpement-innovation.com/catalogue/agenda/dispositifs-medicaux-connectes-sante-du-futur-enjeux-competences-opportunites.html"
+                                        class="image" target="_blank">En savoir plus</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src='https://www.devcoop.fr/img/ticSanteMeeting.jpg' alt="Présentation au Cluster TIC Santé"/>
+                                <div class="caption">
+                                    <div class="title">DEVCOOP au Cluster TIC Santé</div>
+                                    <small>Janvier 2014</small><br/><br/>
+                                    Les responsables de DEVCOOP ont présenté leur société et leurs produits santé lors
+                                    du 1er meeting du cluster de l'année 2014<br/>
+                                    <a href="http://cluster-tic-sante-aquitain.com/1er-tic-sante-meeting-du-cluster-tic-sante-aquitain"
+                                       class="image" target="_blank">En savoir plus</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src='https://www.devcoop.fr/img/ess.jpg' alt="Entreprise sociale et solidaire"/>
+                                <div class="caption">
+                                    <div class="title">Entreprise sociale et solidaire</div>
+                                    <small>Juin 2013</small><br/><br/>
+                                    DEVCOOP a obtenue l'agrément « Entreprise sociale et solidaire ».<br/>
+                                    <a href="http://www.economie.gouv.fr/cedef/economie-sociale-et-solidaire"
+                                       class="image" target="_blank">En savoir plus</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col m6 s12">
+                    <h2 class="media-heading">Dernières réalisations</h2>
+                    <div class="actualites slider">
+                        <ul class="slides">
+                            <li>
+                                <img src='https://www.devcoop.fr/img/dmpBleu.jpg' alt="Connecteur DMP"/>
+                                <div class="caption">
+                                    <div class="title media-heading">Connecteur DMP</div>
+                                    Le connecteur DMP développé par DEVCOOP est homologué <b>DMP compatible API V2</b>
+                                    par le CNDA.<br/>
+                                    Vous souhaitez connecter votre application au DMP sans avoir recours à une
+                                    infrastructure complexe, ce connecteur est fait pour vous.<br/>
+                                    <a href='https://www.devcoop.fr/realisation/dmp' class="image">Lire la suite</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src='https://www.devcoop.fr/img/iot2.png' alt="Unsplashed background img 2"></div>
+
+    </div>
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>L'Internet des Objets</h4>
+                    <p class="left-align light">L'Internet des objets croît rapidement. Selon les prévisions, il
+                        pourrait inclure entre 30 et 75 milliards d'objets en 2020 (B2B et B2C).<br/>
+                        Rendre les objets communicants suppose la constitution d'une longue chaîne de valeur et le
+                        rapprochement d'équipes pluridisciplinaires adressant un ensemble de savoir-faire.<br/>
+                        Les fonctions connectées sont susceptibles d'apporter des services à valeur ajoutée allant bien
+                        au-delà de la fonction première de l'objet, ce qui suppose une connaissance approfondie des
+                        utilisateurs et cas d'usages.<br/>
+
+                        Les enjeux sont à la hauteur des gisements de croissance :
+                    </p>
+                    <ul class="left-align default">
+                        <li>Evolution de la proposition de valeur</li>
+                        <li>
+                            Amélioration de l'expérience utilisateur et amélioration continue du produit
+                        </li>
+                        <li>
+                            Création de nouvelles sources de revenus et évolution des modèles d'affaires traditionnels
+                        </li>
+                    </ul>
+                    <p class="left-align light">
+                        Comment votre entreprise se positionne face à ces enjeux ?
+                        DEVCOOP dispose aujourd'hui d'une large offre de services
+                        dédiés à l'accompagnement des porteurs de projet IOT.
+                    </p>
+                </div>
+                <div class="col s12 right-align">
+                    <a href='https://www.devcoop.fr/realisation/iot' class="image">En savoir plus</a>
+                    <br/><br/><br/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center caption">
+                    <h2 class="header col s12 light  white-text">Savoir vous accompagner au quotidien au travers des
+                        nouveaux terminaux mais aussi garder un accès via les interfaces classiques, tel est l'enjeu des
+                        solutions hybrides.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src='https://www.devcoop.fr/img/tablet.jpg' alt="Unsplashed background img 2"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Mobilité</h4>
+                    <p class="left-align light">
+                        La mobilité est au coeur de l'innovation, elle est un enjeu économique pour de nombreux domaines
+                        d'activités.
+                        Aujourd'hui 2 possibilités s'offres à vous :
+                    </p>
+                    <ul class="left-align default">
+                        <li>Développez une application pour chaque type de terminaux (iOS, Android, Windows Phone,
+                            BlackBerry, PC, ...) et maintenir les différentes versions.
+                        </li>
+                        <li>
+                            Développez une solution hybride basée sur HTML5 ou sur react-native.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 right-align">
+                    <a href='https://www.devcoop.fr/realisation/mobilite' class="image">En savoir plus</a>
+                    <br/><br/><br/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot" style="z-index: 500">
+            <div class="container">
+                <div class="row center">
+                    <br/><br/><br/> <br/><br/><br/> <br/><br/><br/>
+                    <h2 class="header col s12 light white-text">
+                        DMPC-API : Le connecteur DMP développé par DEVCOOP est homologué par l'ASIP.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src='https://www.devcoop.fr/img/chameleons-wallpaper2.jpg' alt="Unsplashed background img 2"></div>
+        <div id="parallaxDMP" style="position: absolute;top:0px;left:0px;width:100%"><img
+                src='https://www.devcoop.fr/img/chameleons-wallpaper1.png' alt="Unsplashed background img 2" style="position: absolute"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4><img src='https://www.devcoop.fr/img/dmp-compatible.png' width="32" class="hidden-xs" alt="DMP Compatible"/>Connecteur
+                        DMP</h4>
+                    <p class="left-align light">La DMPC-API est une interface de programmation écrite en Java et
+                        accessible depuis différents environnements.
+                        Elle fournit une abstraction de haut niveau permettant l'exécution de l'ensemble des
+                        transactions définies dans le cahier des charges pour la DMP Compatibilité.
+                        Elle facilite ainsi aux intégrateurs/éditeurs la mise en place des contraintes fortes imposées
+                        par l'ASIP Santé pour la DMP Compatibilité.
+                        La force de la DMPC-API est dans la simplicité de sa mise en oeuvre, mais aussi dans ses briques
+                        applicatives utilisées.</p>
+                    <p class="left-align light">L'objectif de DEVCOOP est d'implémenter, de commercialiser et de
+                        promouvoir cette DMPC-API.</p>
+                </div>
+                <div class="col s12 right-align">
+                    <a href='https://www.devcoop.fr/realisation/dmp' class="image">En savoir plus</a>
+                    <br/><br/><br/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+  <div  class="container">
+    <div class="row">
+      <div class="col m9">
+        <img src='https://www.devcoop.fr/img/logoS.png' style="float:left;margin-right: 10px;margin-top: 5px" alt="logo DEVCOOP petit">
+        <div class="valign-wrapper">228 Avenue de Cadaujac <br/>33850 Léognan</div>
+      </div>
+
+      <div class="col m3">
+        <a href='https://www.devcoop.fr/mentions.html'>© DEVCOOP 2019</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://www.devcoop.fr/plugins/jquery-2.2.3.min.js"></script>
+
+<script src="https://www.devcoop.fr/plugins/mako.js"></script>
+
+<script src="https://www.devcoop.fr/plugins/materialize.js"></script>
+
+
+<!--[if lt IE 9]>
+
+<script src="https://www.devcoop.fr/plugins/html5shiv.js"></script>
+
+<![endif]-->
+
+<script>
+  $('.collapsible').collapsible({
+    accordion: false 
+  });
+  $('.button-collapse').sideNav();
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name" : "DEVCOOP",
+    "url": "http://www.devcoop.fr",
+    "logo": "http://www.devcoop.fr/img/logo.png",
+    "sameAs" : [
+      "https://twitter.com/devcoop"
+    ],
+    "contactPoint" : [{
+      "@type" : "ContactPoint",
+      "email" : "contact@devcoop.com",
+      "contactType" : "customer service"
+    }],
+    "address" : [{
+      "@type" : "PostalAddress",
+      "streetAddress" : "228 av Cadaujac",
+      "postalCode" : "33850",
+      "addressLocality" : "Leognan",
+      "addressCountry" : "FRANCE"
+    }]
+  }
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-39129192-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<script language="javascript">
+  $('.slider').slider({height: '100%'});
+
+
+  $('.parallax').parallax();
+  
+  var $img = $('#parallaxDMP').children("img").first();
+  $img.load(function () {
+    $img.offset({left: -$img.width()});
+  });
+  function updateDmp() {
+    if (!$('#parallaxDMP').length) {
+      $(window).unbind("scroll", updateDmp);
+      return;
+    }
+    var container_height;
+    var window_width = $(window).width();
+    if (window_width < 601) {
+      container_height = ($('#parallaxDMP').height() > 0) ? $('#parallaxDMP').height() : $('#parallaxDMP').children("img").height();
+    } else {
+      container_height = ($('#parallaxDMP').height() > 0) ? $('#parallaxDMP').height() : 500;
+    }
+
+    var img_width = $img.width();
+    var top = $('#parallaxDMP').offset().top;
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = window.innerHeight;
+    var windowBottom = scrollTop + windowHeight;
+    var percentScrolled = (windowBottom - top) / windowHeight;
+    var parallax = Math.round((img_width * percentScrolled));
+    if (parallax <= ($('#parallaxDMP').width() / 2 + 80)) {
+      $img.css('transform', "translateX(" + parallax + "px)");
+    }
+
+  }
+
+
+  $(window).scroll(updateDmp);
+
+</script>
+</body>
+</html>

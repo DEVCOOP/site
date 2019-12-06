@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="351pt" style="width:644px;height:351px;" version="1.1" viewBox="0 0 644 351" width="644pt">
+    <defs>
+        <filter height="300%" id="f1" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="130,18,140,8,224,8,224,44.2969,214,54.2969,130,54.2969,130,18" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="214" x2="223" y1="18" y2="9"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="214" y1="18" y2="18"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="214" x2="214" y1="18" y2="54.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="145" y="40.9951">Object1</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="259,18,269,8,353,8,353,44.2969,343,54.2969,259,54.2969,259,18" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="343" x2="352" y1="18" y2="9"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="259" x2="343" y1="18" y2="18"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="343" x2="343" y1="18" y2="54.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="274" y="40.9951">Object2</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="388,18,398,8,482,8,482,44.2969,472,54.2969,388,54.2969,388,18" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="472" x2="481" y1="18" y2="9"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="388" x2="472" y1="18" y2="18"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="472" x2="472" y1="18" y2="54.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="403" y="40.9951">Object3</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="517.5,18,527.5,8,614.5,8,614.5,44.2969,604.5,54.2969,517.5,54.2969,517.5,18" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="604.5" x2="613.5" y1="18" y2="9"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="517.5" x2="604.5" y1="18" y2="18"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="604.5" x2="604.5" y1="18" y2="54.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="532.5" y="40.9951">Object...</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="306.5,141,316.5,131,433.5,131,433.5,167.2969,423.5,177.2969,306.5,177.2969,306.5,141" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="423.5" x2="432.5" y1="141" y2="132"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="306.5" x2="423.5" y1="141" y2="141"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="423.5" x2="423.5" y1="141" y2="177.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="87" x="321.5" y="163.9951">BrokerMQTT</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="319.5,286,329.5,276,420.5,276,420.5,312.2969,410.5,322.2969,319.5,322.2969,319.5,286" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="410.5" x2="419.5" y1="286" y2="277"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="319.5" x2="410.5" y1="286" y2="286"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="410.5" x2="410.5" y1="286" y2="322.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="334.5" y="308.9951">Backend</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="107.5,286,117.5,276,210.5,276,210.5,312.2969,200.5,322.2969,107.5,322.2969,107.5,286" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="200.5" x2="209.5" y1="286" y2="277"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="107.5" x2="200.5" y1="286" y2="286"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="200.5" x2="200.5" y1="286" y2="322.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="122.5" y="308.9951">Frontend</text>
+        <path d="M490,264 C490,254 527,254 527,254 C527,254 564,254 564,264 L564,334.1875 C564,344.1875 527,344.1875 527,344.1875 C527,344.1875 490,344.1875 490,334.1875 L490,264 " fill="#FEFECE" filter="url(#f1)" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M490,264 C490,274 527,274 527,274 C527,274 564,274 564,264 " fill="none" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="529" y="286.9951"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="500" y="303.292">Storage</text>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="529" y="319.5889"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="529" y="335.8857"/>
+        <ellipse cx="22" cy="267.5" fill="#FEFECE" filter="url(#f1)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <path d="M22,275.5 L22,302.5 M9,283.5 L35,283.5 M22,302.5 L9,317.5 M22,302.5 L35,317.5 " fill="#FEFECE" filter="url(#f1)" style="stroke: #A80036; stroke-width: 2.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="6" y="337.4951">User</text>
+        <polygon fill="#FEFECE" filter="url(#f1)" points="558.5,141,568.5,131,639.5,131,639.5,167.2969,629.5,177.2969,558.5,177.2969,558.5,141" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="629.5" x2="638.5" y1="141" y2="132"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="558.5" x2="629.5" y1="141" y2="141"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="629.5" x2="629.5" y1="141" y2="177.2969"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="573.5" y="163.9951">BRMS</text>
+        <path d="M190.509,54.191 C200.604,69.174 215.62,88.437 233,101 C254.752,116.723 281.843,128.318 306.178,136.518 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="234" y="97.0669">MQTT send</text>
+        <path d="M234.5883,110.8731 A10,10 0 0 0 242.8731 99.4117" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <ellipse cx="233" cy="101" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M307.325,54.193 C308.914,68.269 312.393,86.494 320,101 C325.817,112.091 334.718,122.452 343.407,130.961 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="321" y="97.0669">MQTT send</text>
+        <path d="M317.0217,110.5462 A10,10 0 0 0 329.5462 103.9783" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <ellipse cx="320" cy="101" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M423.078,54.193 C411.35,76.026 393.548,109.164 381.846,130.947 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="407" y="97.0669">MQTT send</text>
+        <path d="M392.8768,95.4716 A10,10 0 0 0 405.3351 102.1642" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <ellipse cx="402.4523" cy="92.5888" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M543.955,54.125 C528.622,68.7 507.201,87.513 486,101 C468.03,112.431 447.125,122.633 428.051,130.908 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="510" y="97.0669">MQTT send</text>
+        <path d="M476.2385,98.8292 A10,10 0 0 0 483.8292 110.7615" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <ellipse cx="486" cy="101" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M370,177.03 C370,203.824 370,248.7978 370,275.709 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="371" y="220.0669">MQTT receive</text>
+        <path d="M362.9289,233.3966 A10,10 0 0 0 377.0711 233.3966" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <ellipse cx="370" cy="226.3256" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M433.789,154 C473.624,154 523.721,154 558.247,154 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="452" y="147.0669">MQTT Receive</text>
+        <path d="M505.0799,161.0711 A10,10 0 0 0 505.0799 146.9289" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <ellipse cx="498.0089" cy="154" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M38.2537,299 C54.0685,299 79.0308,299 102.1643,299 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="107.377,299,98.377,295,102.377,299,98.377,303,107.377,299" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32" x="56.75" y="292.0669">HTTP</text>
+        <path d="M210.616,299 C242.001,299 282.081,299 314.197,299 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="319.281,299,310.281,295,314.281,299,310.281,303,319.281,299" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="229" y="292.0669">HTTP / Rest</text>
+        <path d="M420.596,299 C441.888,299 463.18,299 484.471,299 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="489.592,299,480.592,295,484.592,299,480.592,303,489.592,299" style="stroke: #A80036; stroke-width: 1.0;"/>
+    </g>
+</svg>
