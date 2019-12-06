@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devcoops on Devcoop website</title>
-    <link>https://www.devcoop.fr/devcoop/</link>
+    <link>http://www.devcoop.fr/devcoop/</link>
     <description>Recent content in Devcoops on Devcoop website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     
-	<atom:link href="https://www.devcoop.fr/devcoop/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.devcoop.fr/devcoop/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
