@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Domaines d&#39;expertise | DEVCOOP on Devcoop website</title>
-    <link>http://www.devcoop.fr/devcoop/expertise/</link>
+    <link>https://www.devcoop.fr/devcoop/expertise/</link>
     <description>Recent content in Domaines d&#39;expertise | DEVCOOP on Devcoop website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     
-	<atom:link href="http://www.devcoop.fr/devcoop/expertise/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.devcoop.fr/devcoop/expertise/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
