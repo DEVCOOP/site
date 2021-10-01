@@ -5,10 +5,6 @@
     <link>https://www.devcoop.fr/</link>
     <description>Recent content in DEVCOOP on Devcoop website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language>
-    
-	<atom:link href="https://www.devcoop.fr/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>fr</language><atom:link href="https://www.devcoop.fr/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

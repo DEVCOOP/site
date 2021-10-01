@@ -14,13 +14,13 @@
   <meta content="DEVCOOP" property="og:site_name">
   <meta content="fr_FR" property="og:locale">
   <meta name="author" content="DEVCOOP">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.88.1" />
 
   <meta name="robots" content="index, follow">
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://www.devcoop.fr/sass/materialize.min.a6acd99c37eba2174901ce9c0a3db8d84cbc4d75e7b84a11c064867911395526.css">
+  <link rel="stylesheet" href="https://www.devcoop.fr/sass/materialize.min.cc9a36e510834d0e6052823508aa439bb7dbb56f86fd32cb8b54e95021258f43.css">
 
   <!-- plugins -->
   
@@ -137,128 +137,23 @@
 
 <script src='https://www.devcoop.fr/plugins/prettify.js'></script>
     <div class="container" itemscope itemtype="http://schema.org/SoftwareApplication" id="dynamic-content">
-        <h2 itemprop="name">DMPC-API</h2>
+        <h2 itemprop="name">DevBox-Santé</h2>
         <p itemprop="about">
-            La DMPC-API est une interface de programmation écrite en Java, fournissant une abstraction de
-            haut niveau permettant l'exécution de l'ensemble des transactions définies
-            dans le <a itemprop="accessibilityAPI"
-                       href='http://esante.gouv.fr/actus/dmp/asip-sante-publication-du-cahier-des-charges-de-la-dmp-compatibilite-actualise'
-                       target="_blank">cahier des charges pour la DMP Compatibilité.</a>
-            Elle facilite ainsi aux intégrateurs/éditeurs la mise en place des contraintes
-            fortes imposées par l'ASIP Santé pour la <span itemprop="applicationSubCategory">DMP</span> Compatibilité.
-        </p>
+            La DevBox-Santé est la boîte à outils des intégrateurs et éditeurs de santé
 
-        <p>Ces contraintes sont de deux natures. La première, technique, est la mise en oeuvre de la sécurité dans le
-            DMP.
-            C'est à dire la gestion des authentifications et des autorisations, ainsi que le cryptage des
-            communications.
-
-            La deuxième, fonctionnel, concerne le respect des différents standards internationaux imposés dans le cahier
-            des charges : IHE, OASIS, HL7, W3C, ASIP Santé (Cadre d'intéropérabilité) …
-        <h2>Mise en oeuvre</h2>
-        <p>L'objectif de Devcoop est d’implémenter, de commercialiser et de promouvoir cette DMPC-API.
-            La force de cette API est dans la simplicité de sa mise en oeuvre, mais aussi dans ses briques applicatives
-            utilisées.
-            En effet, la DMPC-API est une api Java dont tous les composants sont injectables dans un environnement
-            <a href='http://www.springsource.org/spring-framework' target="_blank">SpringFramework</a>.
-            Ces composants sont tous basés sur des librairies de l'opensource comme
-            <a href='http://joda-time.sourceforge.net/' target="_blank">Joda-time</a>,
-            <a href='http://logging.apache.org/log4j' target="_blank">Log4j</a>,
-            <a href='http://santuario.apache.org/' target="_blank">Apache Santuario</a>,
-            <a href='http://cxf.apache.org/' target="_blank">Apache CXF</a>… .
-        </p>
-
-
-        La DMPC-API certifiée <img src='https://www.devcoop.fr/img/dmp-compatible.jpg' width="45" alt="DMP Compatible"/> V1 en 2013 puis <img
-            src='https://www.devcoop.fr/img/dmp-compatible.png' width="45" alt="DMP Compatible"/> V2 en 2019, est découpée en plusieurs profils
-        :
-        <ul class="default">
-            <li>Accés sécurisé au dossier en authentification indirecte (par certificat serveur)</li>
-            <li>Accés sécurisé au dossier en authentification directe (par carte CPS)</li>
-            <li>Création et Gestion Administrative du Dossier</li>
-            <li>Alimentation</li>
-            <li>Consultation</li>
-        </ul>
+            Vous voulez
+            
+            <li>vous interfacer avec le DMP ou avec la Messagerie Sécurisée de Santé (MSSanté),</li>
+            <li>accéder aux informations et outils cryptographiques des différentes cartes (CPS et Vitale) et lecteurs,</li>
+            <li>consulter et réaliser des recherches dans un annuaire de professionnels de santé,</li>
+            <li>obtenir l’INS afin de référencer les données de Santé en toute sécurité</li>
+            <br/>
+            La DevBox santé rassemble tous ces outils d’intéropérabilité nécessaires à la réussite des développements de vos projets de santé.
         <br/>
-        <strong>DEVCOOP vous accompagne lors de l'intégration de cette API dans votre application mais également lors de
-            la phase d'homologation auprès du CNDA.</strong>
+        <br/>
 
-        <br/><br/>
-        <h2>Intégration de la DMPC-API</h2>
-        DEVCOOP vous propose 2 modes d'intégration du connecteur :
-        <br/><br/>
-        <h3>Mode intégré : API Java</h3>
-        Votre application est écrite en Java, vous pouvez directement intégrer l'api (la librairie est disponible via un
-        repository maven).
-        <p>Exemple de scenario :</p>
-        <p>
-            <em>
-                Un Personnel de Santé, Pierre Dupont,
-                accéde au DMP du patient dont l'INSC (Identifiant National de Santé Calculé) est
-                «0404312364978044945679»,
-                et lui ajoute un document concernant une «Hépatite virale chronique»
-            </em>
-        </p>
-
-        <div>
-            <a class="image" id="code-button">
-                Voir le code source.
-            </a>
-            <div id="code" style="display: none">
-
-            <pre class="prettyprint">
-			<code class="language-java">
-// Initialisation du point d'entrée exécutant l'ensemble des transactions vers le DMP
-DMPCProxy proxy = (DMPCProxy)springContext.getBean("dmpcProxy"); 
-
-// Initialisation d'un PS auteur des différentes transactions
-DMPCAuthor ps1 = new DMPCAuthor("1234", "Dupont", "Pierre");
-ps1.setRole("Médecin");    
-ps1.setStructureNom("Clinique du beau Soleil");
-
-// Test d'existence (recherche) d'un patient
-DMPCPatient patient = proxy.td02Exist(new TD02Request("0404312364978044945679")).getPatient();
-       
-// Initialisation d'un document à soumettre au DMP
-DMPCDocument document =  new DMPCDocument();
-document.setTitle("Titre du document concernant l'hépatite virale");
-document.setContent("Contenu textuel");
-document.addEvent(new DMPCCode("B18", "2.16.840.1.113883.6.3", "Hépatite virale chronique"));
-document.setFormat(proxy.getCodesFor(DMPCCode.ASIPJeuxValeurs.FORMAT_CODE).get(1).getCode());
-// …
-
-// Création de l'enveloppe de soumission 
-DMPCSubmission submission = new DMPCSubmission();
-submission.addDocument(document);
-submission.setPatient(patient);
-// Envoi vers le DMP de la soumission.
-TD21Response td21Response = proxy.td21SubmitDocuments(context, new TD21Request(submission));
-System.out.println("Soumission enregistré avec l'uuid :" + td21Response.getSubmission().getUuid());	
-			</code>
-            </pre>
-            </div>
-        </div>
-        <br/><br/>
-        <h3>Mode service : Webservice REST ou SOAP</h3>
-        Votre application est écrite dans un autre language, vous pouvez installer le connecteur en standalone sur un
-        serveur et utiliser les webservices pour communiquer avec le DMP.
-
-        <br/><br/>
-        <h2>Homologation v2</h2>
-        Depuis 2019, une nouvelle version du DMP (v2) est disponible.
-        Le connecteur de DEVCOOP est <b>homologué DMP compatible API V2</b> par le CNDA : <a target="_blank" href="https://cnda.ameli.fr/logiciels-certifies/fiche-dinformation/?liste=2&idSecteur=1&idTable=11&idNum=120" class="image">En savoir plus</a>
-
-        <br/><br/>
-
-
-        <p>Pour plus de renseignements sur sa mise en œuvre, vous pouvez consulter la documentation du projet accessible
-            en ligne :
-            <a href="http://dmp.devcoop.fr" target='_blank'> http://dmp.devcoop.fr</a>
-        </p>
-
-        <strong>Pour toute information, concernant la DMPC-API contactez nous : <a href="mailto:dmp@devcoop.fr">dmp@devcoop.fr</a></strong>
-
-        <p>Pour connaitre les autres connecteurs ou outils proposés par DEVCOOP, rendez vous sur notre boîte à outils santé :
+            
+        <p>Pour en savoir plus, rendez vous sur notre boîte à outils santé :
             <a href="https://www.devbox-sante.fr" target='_blank'> devbox-sante.fr</a>
         </p>
         <br/><br/>
@@ -290,7 +185,7 @@ System.out.println("Soumission enregistré avec l'uuid :" + td21Response.getSubm
       </div>
 
       <div class="col m3">
-        <a href='https://www.devcoop.fr/mentions'>© DEVCOOP 2020</a>
+        <a href='https://www.devcoop.fr/mentions'>© DEVCOOP 2021</a>
       </div>
     </div>
   </div>
