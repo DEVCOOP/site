@@ -1,35 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://www.devcoop.fr</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/devcoop/societe</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/devcoop/expertise</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/devcoop/moyen</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/realisation/sante</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/realisation/dmp</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/realisation/mobilite</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/realisation/metier</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/realisation/reference</loc>
-    </url>
-    <url>
-        <loc>https://www.devcoop.fr/contact</loc>
-    </url>
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.devcoop.fr/realisation/mobilite/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/realisation/dmp/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/contact/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/devcoop/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/realisation/sante/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/devcoop/expertise/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/realisation/metier/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/realisation/iot/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/devcoop/societe/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/mentions/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/devcoop/moyen/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/realisation/reference/</loc>
+  </url><url>
+    <loc>https://www.devcoop.fr/realisation/</loc>
+  </url>
 </urlset>
